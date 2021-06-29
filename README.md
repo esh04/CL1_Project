@@ -28,6 +28,7 @@ The project contains crawl_English.py and crawl_Hindi.py; these are the codes us
 
 ## Processing the Hindi Dataset
 `NLTK` is used to tokenize the data, `spacy` is used to remove stopwords - along with a custom stopword.txt, `spacy` is used for stemming and `stanza` is used to lemmatize and POS tag.
+(P.S: lemmatizationa and POS tagging takes longer than the others for the Hindi dataset)
 
 ## Frequency Graph
 `nltk.FreqDist` was used to make this.
