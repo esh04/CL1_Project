@@ -42,4 +42,4 @@ The Hindi and English folders have the graphs and wordclouds also enclosed.
 
 ![NN+JJ](https://user-images.githubusercontent.com/71181616/123839554-df1cea00-d92a-11eb-9d28-97264e20ec7c.png)
 
-
+The analysis.pdf contains the overview of the algorithms used and analysis of the Frequency Graphs at various stages.
