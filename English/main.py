@@ -23,8 +23,8 @@ def tokenize_word(text):
     
     #uncommment to store tokens in a file
 
-    with open('./data/tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % token for token in tokens)
+    # with open('./data/tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % token for token in tokens)
 
     return tokens
 
@@ -41,8 +41,8 @@ def clean(tokens):
     words = [word for word in stripped if word.isalpha()]
 
     English_words = set(nltk.corpus.words.words())
-    #adding words relevent to current topic
 
+    #adding words relevent to current topic
     English_words.add('coronavirus')
     English_words.add('covishield')
     English_words.add('wuhan')
@@ -58,6 +58,8 @@ def clean(tokens):
 
     # FILTERING OUT STOPWORDS
     stop_words = set(stopwords.words('english'))
+
+    #some additional stopwords relevant to the dataset
     stop_words.add('al')
     stop_words.add('may')
     stop_words.add('might')
@@ -70,20 +72,21 @@ def clean(tokens):
 
     #uncommment to store cleaned tokens in a file
 
-    with open('./data/clean_tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % word for word in words)
+    # with open('./data/clean_tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % word for word in words)
 
     return words
 
 def stemmer(words):
+
     #stemming
     stemmer = PorterStemmer()
     stemmed_tokens = [stemmer.stem(token) for token in words]
 
     #uncommment to store stemmed tokens in a file
 
-    with open('./data/stem.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
+    # with open('./data/stem.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
 
     return stemmed_tokens
 
@@ -94,8 +97,8 @@ def lemmatizer(words):
 
     #uncommment to store stemmed tokens in a file
 
-    with open('./data/lemm.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % lemm for lemm in lemmatized_tokens)
+    # with open('./data/lemm.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % lemm for lemm in lemmatized_tokens)
 
     return lemmatized_tokens
 
@@ -106,7 +109,6 @@ def POS_tagging(words):
 
 def wordcloud(words,POS_tagged):
     
-
     #Making the wordcloud
     cloud_words = []
     tags = ['NN','JJ']
@@ -142,28 +144,28 @@ sent = tokenize_sentence(text)
 tokens = tokenize_word(text)
 
 #uncomment to view frequency graph of initial tokens
-Frequency_graphs(tokens)
+#Frequency_graphs(tokens)
 
 cleaned_tokens = clean(tokens)
 
 #uncomment to view frequency graph of cleaned tokens
-Frequency_graphs(cleaned_tokens)
+#Frequency_graphs(cleaned_tokens)
 
 stemm_tokens = stemmer(cleaned_tokens)
 
 #uncomment to view frequency graph of stemmed tokens
-Frequency_graphs(stemm_tokens)
+#Frequency_graphs(stemm_tokens)
 
 lemm_tokens = lemmatizer(cleaned_tokens)
 
 #uncomment to viewfrequency graph of lemmatized tokens
-Frequency_graphs(lemm_tokens)
+#Frequency_graphs(lemm_tokens)
 
 POS_tagged_tokens = POS_tagging(cleaned_tokens)
 
 #uncomment to form a frequency graph of all the POS_tags used
-POS_tags = [list[1] for list in POS_tagged_tokens]
-Frequency_graphs(POS_tags) 
+#POS_tags = [list[1] for list in POS_tagged_tokens]
+#Frequency_graphs(POS_tags) 
 
 
 wordcloud(cleaned_tokens,POS_tagged_tokens)

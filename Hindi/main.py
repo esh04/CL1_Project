@@ -34,8 +34,8 @@ def tokenize_word(text):
     
     #uncommment to store tokens in a file
 
-    with open('./data/tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % token for token in tokens)
+    # with open('./data/tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % token for token in tokens)
 
     return tokens
 
@@ -69,8 +69,8 @@ def clean(tokens):
 
     #uncommment to store cleaned tokens in a file
 
-    with open('./data/clean_tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % word for word in words)
+    # with open('./data/clean_tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % word for word in words)
 
     return words
 
@@ -85,8 +85,8 @@ def stemmer(words):
     
     #uncommment to store stemmed tokens in a file
 
-    with open('./data/stem.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
+    # with open('./data/stem.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
 
     return stemmed_tokens
 
@@ -103,8 +103,8 @@ def lemmatizer(words):
 
     #uncommment to store stemmed tokens in a file
 
-    with open('./data/lemm.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % lemm for lemm in lemm_tokens)
+    # with open('./data/lemm.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % lemm for lemm in lemm_tokens)
 
     return lemm_tokens
 
@@ -172,27 +172,27 @@ sent = tokenize_sentence(text)
 tokens = tokenize_word(text)
 
 #uncomment to view frequency graph of initial tokens
-Frequency_graphs(tokens)
+# Frequency_graphs(tokens)
 
 cleaned_tokens = clean(tokens)
 
 #uncomment to view frequency graph of cleaned tokens
-Frequency_graphs(cleaned_tokens)
+# Frequency_graphs(cleaned_tokens)
 
 stemm_tokens = stemmer(cleaned_tokens)
 
 #uncomment to view frequency graph of stemmed tokens
-Frequency_graphs(stemm_tokens)
+# Frequency_graphs(stemm_tokens)
 
 lemm_tokens = lemmatizer(cleaned_tokens)
 
 #uncomment to viewfrequency graph of lemmatized tokens
-Frequency_graphs(lemm_tokens)
+# Frequency_graphs(lemm_tokens)
 
 POS_tags = POS_tagging(cleaned_tokens)
 
 #uncomment to form a frequency graph of all the POS_tags used
-Frequency_graphs(POS_tags) 
+# Frequen   cy_graphs(POS_tags) 
 
 
 wordcloud(cleaned_tokens)

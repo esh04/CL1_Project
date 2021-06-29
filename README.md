@@ -14,7 +14,8 @@ Scrapping data and pre-processing it to form a word cloud in order to generate w
 5. Building a word cloud
 
 ## To run the Project
-Both the folders English and Hindi, contain a `main.py` which is to be runned. 
+Both the folders English and Hindi, contain a `main.py` which is to be runned. Uncomment the lines depending upon the required output. Appropriate comments have been provided in the code. 
+The required packages have been added in requirements.txt, apart fromm that the NLTK, stanza and spacy datasets have to be downloaded.
 
 ## Creating the Dataset
 The project contains crawl_English.py and crawl_Hindi.py; these are the codes used to crawl data from the urls. All the urls used are mentioned in the url.txt file in each folder. `Beautiful soup` was used in order to crawl this data.
