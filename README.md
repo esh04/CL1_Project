@@ -42,10 +42,12 @@ The Hindi and English folders have the graphs and wordclouds also enclosed.
 
 ## Final Result
 
-![NN+JJ](https://user-images.githubusercontent.com/71181616/123839516-d3c9be80-d92a-11eb-99af-129a80d8a1b9.png)
+![NN+JJ](https://user-images.githubusercontent.com/71181616/123856515-cfa79c00-d93e-11eb-97d1-590848be8ec1.png)
+
 The above wordcloud is of the data collected through around 200 news articles regarding 'Corona Virus'
 
-![NN+JJ](https://user-images.githubusercontent.com/71181616/123839554-df1cea00-d92a-11eb-9d28-97264e20ec7c.png)
+![Figure_1](https://user-images.githubusercontent.com/71181616/123856548-d8986d80-d93e-11eb-920b-b61a8083a96c.png)
+
 The above wordloud is about the Indian classic 'Mahabharata'. It comprises of incidences that took place before, during and after the 'Mahabharata'. 
 
 The analysis.pdf contains the overview of the algorithms used and analysis of the Frequency Graphs at various stages.
