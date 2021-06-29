@@ -13,6 +13,9 @@ Scrapping data and pre-processing it to form a word cloud in order to generate w
 4. Making a frequency graph at each stage.
 5. Building a word cloud
 
+## To run the Project
+Both the folders English and Hindi, contain a `main.py` which is to be runned. 
+
 ## Creating the Dataset
 The project contains crawl_English.py and crawl_Hindi.py; these are the codes used to crawl data from the urls. All the urls used are mentioned in the url.txt file in each folder. `Beautiful soup` was used in order to crawl this data.
 
@@ -39,7 +42,9 @@ The Hindi and English folders have the graphs and wordclouds also enclosed.
 ## Final Result
 
 ![NN+JJ](https://user-images.githubusercontent.com/71181616/123839516-d3c9be80-d92a-11eb-99af-129a80d8a1b9.png)
+The above wordcloud is of the data collected through around 200 news articles regarding 'Corona Virus'
 
 ![NN+JJ](https://user-images.githubusercontent.com/71181616/123839554-df1cea00-d92a-11eb-9d28-97264e20ec7c.png)
+The above wordloud is about the Indian classic 'Mahabharata'. It comprises of incidences that took place before, during and after the 'Mahabharata'. 
 
 The analysis.pdf contains the overview of the algorithms used and analysis of the Frequency Graphs at various stages.
