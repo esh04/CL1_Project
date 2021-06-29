@@ -189,13 +189,12 @@ lemm_tokens = lemmatizer(cleaned_tokens)
 #uncomment to viewfrequency graph of lemmatized tokens
 # Frequency_graphs(lemm_tokens)
 
-POS_tags = POS_tagging(cleaned_tokens)
+POS_tags = POS_tagging(lemm_tokens)
 
 #uncomment to form a frequency graph of all the POS_tags used
-# Frequen   cy_graphs(POS_tags) 
+#Frequency_graphs(POS_tags) 
 
-
-wordcloud(cleaned_tokens)
+wordcloud(lemm_tokens)
 
 
 ##################################################################
