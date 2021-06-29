@@ -1,28 +1,4 @@
-import requests
-from bs4 import BeautifulSoup
-
-filename = "English_data.txt"
-with open(filename, 'a') as txtfile:
-   
-    urls = ['https://www.nytimes.com/2021/06/28/world/asia/india-covid-oxygen.html?searchResultPosition=16','https://www.nytimes.com/2021/06/12/world/asia/india-modi-covid.html?searchResultPosition=15','https://www.nytimes.com/2021/06/08/world/pilots-india-covid-compensation.html?searchResultPosition=14','https://www.nytimes.com/2021/06/17/opinion/india-covid-ganges.html?searchResultPosition=12','https://www.nytimes.com/2021/06/24/podcasts/the-daily/serum-institute-coronavirus-vaccine.html?searchResultPosition=10','https://www.nytimes.com/2021/06/22/world/india-covid-vaccination.html?searchResultPosition=9','https://www.nytimes.com/2021/05/06/us/india-covid-telehealth-dalits.html?searchResultPosition=6','https://www.nytimes.com/2021/05/09/world/india-covid-mucormycosis.html?searchResultPosition=5','https://www.nytimes.com/2021/05/27/technology/india-twitter.html?searchResultPosition=30','https://www.nytimes.com/interactive/2021/05/25/world/asia/india-covid-death-estimates.html?searchResultPosition=29','https://www.nytimes.com/2021/06/17/world/south-asia-covid-vaccines.html?searchResultPosition=18','https://www.nytimes.com/2021/05/28/opinion/covid-vaccine-variants.html?searchResultPosition=28','https://www.nytimes.com/2021/05/30/world/asia/nepal-covid19-migrants.html?searchResultPosition=27','https://www.nytimes.com/2021/05/28/world/asia/india-covid-vaccine-pfizer.html?searchResultPosition=26','https://www.nytimes.com/2021/05/31/world/asia/india-covid.html?searchResultPosition=25','https://www.nytimes.com/2021/05/31/health/covid-variant-names-india-delta.html?searchResultPosition=23','https://www.nytimes.com/2021/06/03/technology/india-israel-facebook-employees.html?searchResultPosition=22','https://www.nytimes.com/2021/06/03/us/coronavirus-vaccine-college-students.html?searchResultPosition=21','https://www.nytimes.com/2021/04/29/world/asia/india-coronavirus-vaccines.html?searchResultPosition=20','https://www.nytimes.com/2021/05/01/world/asia/india-covid19-modi.html?searchResultPosition=19','https://www.nytimes.com/2021/05/16/world/asia/india-covid19-black-market.html?searchResultPosition=4','https://www.nytimes.com/2021/05/13/world/asia/covid19-india-nepal-bangladesh-sri-lanka.html?searchResultPosition=3','https://www.nytimes.com/2021/06/20/world/asia/india-covid-black-fungus.html?searchResultPosition=2','https://www.nytimes.com/2021/05/25/world/asia/india-covid-experience.html?searchResultPosition=1']
-  
-    for url in urls:
-        res = requests.get(url)
-        html_page = res.content
-
-        soup = BeautifulSoup(html_page, 'html.parser')
-        #texts = soup.find_all("p")
-        #texts = soup.find_all("p", {"dir": "ltr"})
-        #texts = soup.find_all("p", {"class": "paywall"})
-        texts = soup.find_all("p", {"class": "css-axufdj evys1bk0"})
-        #texts = soup.find_all("p", {"class": "f-body"})
-
-        for text in texts:
-            txtfile.write(text.get_text())
-        print("done")
-        
- #urls
- # https://www.wired.com/story/delta-coronavirus-variant-low-vaccine-rates-could-spike-cases/
+# https://www.wired.com/story/delta-coronavirus-variant-low-vaccine-rates-could-spike-cases/
  # https://www.wired.co.uk/article/china-coronavirus
  # https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/
  # https://www.wired.co.uk/article/covid-19-uk-third-wave
