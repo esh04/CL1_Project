@@ -45,7 +45,7 @@ To view any Frequency Graph, uncomment the necessary line in `main.py`, by defau
 
 ## Final Result
 
-![NN+JJ](https://user-images.githubusercontent.com/71181616/123856515-cfa79c00-d93e-11eb-97d1-590848be8ec1.png)
+![Wordcloud](https://user-images.githubusercontent.com/71181616/123956938-dc70d200-d9c8-11eb-9940-975bb1629336.png)
 
 The above wordcloud is of the data collected through around 200 news articles regarding 'Corona Virus'
 
