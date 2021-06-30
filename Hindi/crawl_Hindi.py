@@ -78,3 +78,5 @@ with open(filename, 'a') as txtfile:
 #'https://visionindiafoundation.com/draupadi-mahabharata-feminism-hindi/'
 # 'https://isha.sadhguru.org/in/hi/wisdom/article/mahabharat-ke-yuddh-ka-kaaran-bana-yh-juye-ka-khel'
 #'https://www.gyanmanthan.net/secret-of-mahabharat-in-hindi/'
+#'https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4'
+
