@@ -15,6 +15,7 @@ def remove_links(text):
     text = re.sub(r'^https?:\/\/.*[\r\n]*', '', text, flags=re.MULTILINE)
     return text
 
+#remove digits
 def remove_numbers(text):
     #digits are mapped to None
     translation_table = str.maketrans('', '', string.digits)
@@ -129,7 +130,6 @@ def lemmatizer(words):
 
 def POS_tagging(words):
     POS_tagged = nltk.pos_tag(words)
-
     #uncommment to store POS tokens in a file
 
     # with open('./data/POS_tagged.txt', 'w') as filehandle:

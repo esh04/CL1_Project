@@ -15,6 +15,7 @@ Scrapping data and pre-processing it to form a word cloud in order to generate w
 
 ## To run the Project
 Both the folders English and Hindi, contain a `main.py` which is to be runned. Uncomment the lines depending upon the required output. Appropriate comments have been provided in the code. 
+To store the tokens in files, uncomment the required code in `functions.py`
 The required packages have been added in requirements.txt, apart fromm that the NLTK, stanza and spacy datasets have to be downloaded.
 
 ## Creating the Dataset
@@ -27,7 +28,7 @@ The project contains crawl_English.py and crawl_Hindi.py; these are the codes us
 `NLTK` is used to tokenize, remove stopwords, stem, lemmatize and POS tag.
 
 ## Processing the Hindi Dataset
-`NLTK` is used to tokenize the data, `spacy` is used to remove stopwords - along with a custom stopword.txt, `spacy` is used for stemming and `stanza` is used to lemmatize and POS tag.
+`NLTK` is used to tokenize the data, a custom dataset (stopwords.txt) is used to remove stopwords, `spacy` is used for stemming and `stanza` is used to lemmatize and POS tag.
 (P.S: lemmatizationa and POS tagging takes longer than the others for the Hindi dataset)
 
 ## Frequency Graph
@@ -40,6 +41,7 @@ Only the Nouns and Adjectives are used to make the Wordcloud more relevant.
 (A seperate font has to be imported to make the Hindi wordcloud and graphs, the fonts have been include in ./Hindi/font)
 
 The Hindi and English folders have the graphs and wordclouds also enclosed.
+To view any Frequency Graph, uncomment the necessary line in `main.py`, by default only the wordcloud and  list of the tokens in decreasing order of priority are printed.
 
 ## Final Result
 
@@ -52,3 +54,5 @@ The above wordcloud is of the data collected through around 200 news articles re
 The above wordloud is about the Indian classic 'Mahabharata'. It comprises of incidences that took place before, during and after the 'Mahabharata'. 
 
 The analysis.pdf contains the overview of the algorithms used and analysis of the Frequency Graphs at various stages.
+The data folder has all the tokens saved at different stages.
+The graph folder contains all the Frequency graphs.

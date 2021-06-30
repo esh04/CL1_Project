@@ -39,22 +39,6 @@ POS_tagged_tokens = POS_tagging(lemm_tokens)
 wordcloud(lemm_tokens,POS_tagged_tokens)
 
 
-##################################################################
-
-#uncomment to form a frequency graph of a pre-processed token file present in data file (file name 'token' in this case) 
-
-
-# with open("./data/tokens.txt") as f:
-#     tokens = [ line.strip() for line in f ]
-
-# Frequency_graphs(tokens)
-
-#uncomment to form a wordcloud of a pre-processed token file present in data folder (file name 'token' in this case)
-
-# with open("./data/tokens.txt") as f:
-#     tokens = [ line.strip() for line in f ]
-
-# wordcloud(tokens,POS_tagging(tokens))
 
 
 

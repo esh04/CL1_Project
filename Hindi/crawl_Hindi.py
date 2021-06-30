@@ -79,4 +79,5 @@ with open(filename, 'a') as txtfile:
 # 'https://isha.sadhguru.org/in/hi/wisdom/article/mahabharat-ke-yuddh-ka-kaaran-bana-yh-juye-ka-khel'
 #'https://www.gyanmanthan.net/secret-of-mahabharat-in-hindi/'
 #'https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4'
-
+#https://m.dailyhunt.in/news/india/hindi/webduniya+hindi-epaper-hinweb/mahabharat+ke+pramukh+patro+ka+parichay+bhag+1-newsid-107726834
+#https://www.gurujiinhindi.com/2019/11/Mahabharat-ki-kahani-mahabharat-hindi-all-mahabharat-ki-kahani-in-hindi.html
