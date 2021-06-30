@@ -45,11 +45,11 @@ To view any Frequency Graph, uncomment the necessary line in `main.py`, by defau
 
 ## Final Result
 
-![Wordcloud](https://user-images.githubusercontent.com/71181616/123956938-dc70d200-d9c8-11eb-9940-975bb1629336.png)
+![WordCloud](https://user-images.githubusercontent.com/71181616/124010000-e4963500-d9fb-11eb-8e59-dfd58cfc8537.png)
 
 The above wordcloud is of the data collected through around 200 news articles regarding 'Corona Virus'
 
-![Figure_1](https://user-images.githubusercontent.com/71181616/123856548-d8986d80-d93e-11eb-920b-b61a8083a96c.png)
+![wordcloud](https://user-images.githubusercontent.com/71181616/124010031-ecee7000-d9fb-11eb-919f-23d64e56a88e.png)
 
 The above wordloud is about the Indian classic 'Mahabharata'. It comprises some of the incidences that took place during the 'Mahabharata'.
 
