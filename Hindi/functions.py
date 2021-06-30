@@ -127,7 +127,7 @@ def stanza_operations(string):
 def wordcloud(POS_tagged):
     #only nouns and adjectives will be included in the wordcloud
     cloud_words = []
-    tags = ['NN','JJ','NNC','NNP','NNPC']
+    tags = ['NN','NNC','NNP','NNPC']
 
     for token in POS_tagged:
         if token[1] in tags:
@@ -139,13 +139,13 @@ def wordcloud(POS_tagged):
     dictionary=Counter(cloud_words)
 
 
-    words_in_cloud = dictionary.most_common(200)
+    words_in_cloud = dictionary.most_common(155)
     # print all words in decreasing order of priority
     print(words_in_cloud)
 
-    #top 200 words make the word cloud
+    #top 155 words make the word cloud
 
-    cloud = WordCloud(max_font_size=80,colormap="hsv",width=600, height=400,background_color="white",font_path=font,max_words=200).generate_from_frequencies(dictionary)
+    cloud = WordCloud(max_font_size=80,colormap="hsv",width=600, height=400,background_color="white",font_path=font,max_words=155).generate_from_frequencies(dictionary)
     plt.figure(figsize=(20,15))
     plt.imshow(cloud, interpolation='bilinear')
     plt.axis('off')
