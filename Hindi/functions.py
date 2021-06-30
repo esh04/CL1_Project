@@ -46,8 +46,8 @@ def tokenize_word(text):
     
     #uncommment to store tokens in a file
 
-    with open('./data/tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % token for token in tokens)
+    # with open('./data/tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % token for token in tokens)
 
     return tokens
 
@@ -60,6 +60,8 @@ def clean(tokens):
     string.punctuation += '।'
     string.punctuation += '“'
     string.punctuation += '”'
+    string.punctuation += '‘'
+    string.punctuation += '’'
 
     table = str.maketrans('', '', string.punctuation)
     stripped = [w.translate(table) for w in tokens]
@@ -79,8 +81,8 @@ def clean(tokens):
 
     #uncommment to store cleaned tokens in a file
 
-    with open('./data/clean_tokens.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % word for word in words)
+    # with open('./data/clean_tokens.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % word for word in words)
 
     return words
 
@@ -94,8 +96,8 @@ def stemmer(string):
     
     #uncommment to store stemmed tokens in a file
 
-    with open('./data/stem.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
+    # with open('./data/stem.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % stem for stem in stemmed_tokens)
 
     return stemmed_tokens
 
@@ -113,12 +115,12 @@ def stanza_operations(string):
 
 
     #uncommment to store stemmed tokens in a file
-    with open('./data/lemm.txt', 'w') as filehandle:
-        filehandle.writelines("%s\n" % lemm for lemm in lemm_tokens)
+    # with open('./data/lemm.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s\n" % lemm for lemm in lemm_tokens)
     
     #uncommment to store POS tokens in a file
-    with open('./data/POS.txt', 'w') as filehandle:
-        filehandle.writelines("%s, %s\n" % (pos[0], pos[1]) for pos in POS_tagged)
+    # with open('./data/POS.txt', 'w') as filehandle:
+    #     filehandle.writelines("%s, %s\n" % (pos[0], pos[1]) for pos in POS_tagged)
 
     return lemm_tokens, POS_tagged , POS_tags
 
