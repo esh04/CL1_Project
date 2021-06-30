@@ -165,6 +165,6 @@ def wordcloud(words,POS_tagged):
 def Frequency_graphs(tokens):
    
     fd = nltk.FreqDist(tokens)
-    #graph will have 100 entries
-    fd.plot(100,cumulative=False)
+    #graph will have 50 entries
+    fd.plot(50,cumulative=False)
    

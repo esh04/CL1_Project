@@ -51,7 +51,7 @@ The above wordcloud is of the data collected through around 200 news articles re
 
 ![Figure_1](https://user-images.githubusercontent.com/71181616/123856548-d8986d80-d93e-11eb-920b-b61a8083a96c.png)
 
-The above wordloud is about the Indian classic 'Mahabharata'. It comprises of incidences that took place before, during and after the 'Mahabharata'. 
+The above wordloud is about the Indian classic 'Mahabharata'. It comprises some of the incidences that took place during the 'Mahabharata'.
 
 The analysis.pdf contains the overview of the algorithms used and analysis of the Frequency Graphs at various stages.
 The data folder has all the tokens saved at different stages.
