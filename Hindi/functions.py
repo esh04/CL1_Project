@@ -127,7 +127,7 @@ def stanza_operations(string):
 def wordcloud(POS_tagged):
     #only nouns and adjectives will be included in the wordcloud
     cloud_words = []
-    tags = ['NN','NNC','NNP','NNPC']
+    tags = ['NN','NNC','NNP','NNPC','JJ']
 
     for token in POS_tagged:
         if token[1] in tags:
@@ -135,7 +135,6 @@ def wordcloud(POS_tagged):
 
     #word cloud
 
-     #top 147 words make the word cloud i.e all words that have been used more than 100 times
     dictionary=Counter(cloud_words)
 
 
